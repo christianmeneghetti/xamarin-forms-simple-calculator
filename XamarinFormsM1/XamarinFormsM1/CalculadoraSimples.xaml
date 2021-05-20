@@ -4,9 +4,30 @@
              x:Class="XamarinFormsM1.CalculadoraSimples">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
+            
+            <Label Text="Calculadora Simples"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="Large"/>
+            <Label Text="Valor A:" 
                 HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="etValorA" Keyboard="Numeric" Placeholder="Informe um número"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Valor B:" 
+                HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="etValorB" Keyboard="Numeric" Placeholder="Informe um número"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+            
+                <StackLayout Margin="20" Orientation="Horizontal">
+                    <Button Text="+"/>
+                    <Button Text="-"/>
+                    <Button Text="/"/>
+                    <Button Text="*"/>
+                </StackLayout>
+            
+            <Label x:Name="lbResp" />
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
