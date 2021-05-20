@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsM1.ParOuImpar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Determina se um numero é par ou ímpar!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                FontAttributes="Italic"
+                FontSize="Large"/>
+            <Entry x:Name="etValor" Keyboard="Numeric" Placeholder="Informe um número ex:5"/>
+            <Button x:Name="btExecutar" Text="Executar"
+                VerticalOptions="StartAndExpand"/>
+            <Label x:Name="lbResp" 
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                FontAttributes="Italic"
+                FontSize="Large" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
