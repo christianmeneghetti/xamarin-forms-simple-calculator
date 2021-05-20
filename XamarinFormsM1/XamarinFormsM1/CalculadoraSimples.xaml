@@ -18,16 +18,19 @@
             <Entry x:Name="etValorB" Keyboard="Numeric" Placeholder="Informe um número"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand"/>
-            
-                <StackLayout Margin="20" Orientation="Horizontal">
-                    <Button Text="+"/>
-                    <Button Text="-"/>
-                    <Button Text="/"/>
-                    <Button Text="*"/>
-                </StackLayout>
-            
-            <Label x:Name="lbResp" />
-            
+
+            <Label x:Name="lbResp" 
+                FontSize="Large"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout Margin="20" Orientation="Horizontal">
+                <Button Text="+" Clicked="btOperacoes_Clicked"/>
+                <Button Text="-" Clicked="btOperacoes_Clicked"/>
+                <Button Text="/" Clicked="btOperacoes_Clicked"/>
+                <Button Text="*" Clicked="btOperacoes_Clicked"/>
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
